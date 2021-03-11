@@ -25,9 +25,6 @@ const Hero = () => {
     setHover((preHover) => !preHover);
   };
 
-  const downloadFile = () => {
-    window.location.href = "../assets/Abraham_Wilson_Resume.pdf";
-  }
 
   return (
     <HeroContainer id='home'>
@@ -47,14 +44,16 @@ const Hero = () => {
           </SocialIcon>
 
           <HeroBtnWarpper>
+          
+            <a href="https://forms.gle/6Ye8CQoC6yUg2VuN9" target="_blank" rel="noreferrer">
             <Button
               primary='true'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
-              onClick={downloadFile}
             >
               Resume {hover ? <ArrowDown /> : <ResumeDoc />}
             </Button>
+            </a>
           </HeroBtnWarpper>
         </Contact>
 
