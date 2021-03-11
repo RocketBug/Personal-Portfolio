@@ -26,7 +26,7 @@ const Hero = () => {
   };
 
   const downloadFile = () => {
-    window.location.href = "https://friendly-poitras-d72c19.netlify.app/src/assets/Abraham_Wilson_Resume.pdf"
+    window.location.href = "../assets/Abraham_Wilson_Resume.pdf";
   }
 
   return (
