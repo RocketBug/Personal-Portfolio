@@ -18,11 +18,16 @@ import {
 import { Button } from "../ButtonElement";
 import img from "../../images/Work_from_home.svg";
 
+
 const Hero = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover((preHover) => !preHover);
   };
+
+  const downloadFile = () => {
+    window.location.href = "https://friendly-poitras-d72c19.netlify.app/src/assets/Abraham_Wilson_Resume.pdf"
+  }
 
   return (
     <HeroContainer id='home'>
@@ -46,6 +51,7 @@ const Hero = () => {
               primary='true'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
+              onClick={downloadFile}
             >
               Resume {hover ? <ArrowDown /> : <ResumeDoc />}
             </Button>
