@@ -156,3 +156,7 @@ export const EmailIcon = styled(FiMail)`
     color: #4d61fc;
   }
 `;
+
+export const LinkResume = styled.a`
+  text-decoration: none;
+`;

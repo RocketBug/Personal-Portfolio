@@ -13,6 +13,7 @@ import {
   Intro,
   Contact,
   HeroH2,
+  LinkResume,
 } from "./HeroElements";
 
 import { Button } from "../ButtonElement";
@@ -30,11 +31,11 @@ const Hero = () => {
       <Intro>
         <div>
           <HeroH1>Hi I'm Abraham Wilson</HeroH1>
-          <HeroH2>I'm a Web Developer</HeroH2>
+          <HeroH2>I'm LinkResume Web Developer</HeroH2>
         </div>
 
         <Contact>
-          <SocialIcon href='mailto:a.wilson.1397@gmail.com'>
+          <SocialIcon href='mailto:LinkResume.wilson.1397@gmail.com'>
             <EmailIcon />
           </SocialIcon>
 
@@ -43,7 +44,7 @@ const Hero = () => {
           </SocialIcon>
 
           <HeroBtnWarpper>
-            <a href={resume} target='_blank' rel='noreferrer'>
+            <LinkResume href={resume} target='_blank' rel='noreferrer'>
               <Button
                 primary='true'
                 onMouseEnter={onHover}
@@ -51,7 +52,7 @@ const Hero = () => {
               >
                 Resume {hover ? <ArrowDown /> : <ResumeDoc />}
               </Button>
-            </a>
+            </LinkResume>
           </HeroBtnWarpper>
         </Contact>
       </Intro>
