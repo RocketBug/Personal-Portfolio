@@ -17,14 +17,13 @@ import {
 
 import { Button } from "../ButtonElement";
 import img from "../../images/Work_from_home.svg";
-
+import resume from "../../assets/Abraham_Wilson_Resume.pdf";
 
 const Hero = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover((preHover) => !preHover);
   };
-
 
   return (
     <HeroContainer id='home'>
@@ -44,19 +43,17 @@ const Hero = () => {
           </SocialIcon>
 
           <HeroBtnWarpper>
-          
-            <a href="https://forms.gle/6Ye8CQoC6yUg2VuN9" target="_blank" rel="noreferrer">
-            <Button
-              primary='true'
-              onMouseEnter={onHover}
-              onMouseLeave={onHover}
-            >
-              Resume {hover ? <ArrowDown /> : <ResumeDoc />}
-            </Button>
+            <a href={resume} target='_blank' rel='noreferrer'>
+              <Button
+                primary='true'
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                Resume {hover ? <ArrowDown /> : <ResumeDoc />}
+              </Button>
             </a>
           </HeroBtnWarpper>
         </Contact>
-
       </Intro>
       <ImgBg src={img} />
     </HeroContainer>
