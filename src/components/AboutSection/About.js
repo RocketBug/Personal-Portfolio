@@ -20,15 +20,15 @@ const About = () => {
           <AboutMeContent>
             <AboutMeH1>About Me</AboutMeH1>
             <AboutMeP>
-              I'm a B.Tech graduate in Computer Sciences from MRIT Hyderabad,
-              technology is where my passion lies. I'm highly organized and
-              detail oriented. I find great enthusiasm in exploring new ideas
-              and experementing new solution.
+              Hi, I'm Abraham Wilson. A Full-Stack Web Developer based in
+              Hyderabad. I like to work on challenging and and interesting
+              problems. I mainly work with the <strong>MERN stack</strong>, and
+              <strong> Python</strong>. I'm always open to learn new things.
             </AboutMeP>
             <br />
             <AboutMeP>
-              I'm fuled by a desire to take on challenging problems and come up
-              creative solutions.
+              Coming up with creative and innovative solutions that have an
+              impact in peoples lives brings me great joy and satisfaction.
             </AboutMeP>
           </AboutMeContent>
         </ContentContainer>

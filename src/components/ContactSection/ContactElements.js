@@ -6,10 +6,16 @@ import { FiMail } from "react-icons/fi";
 
 export const ContactContainer = styled.div`
   display: flex;
+  position: relative;
   height: 20vh;
   background: whitesmoke;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 60px;
+    flex-direction: column;
+  }
 `;
 
 export const SocialIcon = styled.a`
@@ -32,7 +38,6 @@ export const PhoneIcon = styled(BsPhone)`
 `;
 
 export const LinkedInIcon = styled(SiLinkedin)`
-  padding-right: 10px;
   font-size: 3rem;
   color: black;
   &:hover {
@@ -42,7 +47,6 @@ export const LinkedInIcon = styled(SiLinkedin)`
 `;
 
 export const EmailIcon = styled(FiMail)`
-  padding-right: 10px;
   font-size: 3.5rem;
   color: black;
   &:hover {

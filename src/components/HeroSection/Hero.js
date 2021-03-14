@@ -31,7 +31,7 @@ const Hero = () => {
       <Intro>
         <div>
           <HeroH1>Hi I'm Abraham Wilson</HeroH1>
-          <HeroH2>I'm Web Developer</HeroH2>
+          <HeroH2>Full Stack Web Developer</HeroH2>
         </div>
 
         <Contact>

@@ -67,6 +67,7 @@ export const Contact = styled.div`
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 3rem;
+  font-weight: 500;
   text-align: center;
 
   @media screen and (max-width: 1024px) {
@@ -85,6 +86,7 @@ export const HeroH1 = styled.h1`
 export const HeroH2 = styled.h2`
   color: #fff;
   font-size: 2.5rem;
+  font-weight: 300;
   text-align: center;
 
   @media screen and (max-width: 1024px) {
