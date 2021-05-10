@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ContactContainer,
-  PhoneIcon,
   SocialIcon,
   LinkedInIcon,
   EmailIcon,
