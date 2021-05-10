@@ -13,11 +13,12 @@ import {
   Intro,
   Contact,
   HeroH2,
+  LinkResume,
 } from "./HeroElements";
 
 import { Button } from "../ButtonElement";
 import img from "../../images/Work_from_home.svg";
-
+import resume from "../../assets/Abraham_Wilson_Resume.pdf";
 
 const Hero = () => {
   const [hover, setHover] = useState(false);
@@ -25,17 +26,16 @@ const Hero = () => {
     setHover((preHover) => !preHover);
   };
 
-
   return (
     <HeroContainer id='home'>
       <Intro>
         <div>
           <HeroH1>Hi I'm Abraham Wilson</HeroH1>
-          <HeroH2>I'm a Web Developer</HeroH2>
+          <HeroH2>Full Stack Web Developer</HeroH2>
         </div>
 
         <Contact>
-          <SocialIcon href='mailto:a.wilson.1397@gmail.com'>
+          <SocialIcon href='mailto:LinkResume.wilson.1397@gmail.com'>
             <EmailIcon />
           </SocialIcon>
 
@@ -44,19 +44,17 @@ const Hero = () => {
           </SocialIcon>
 
           <HeroBtnWarpper>
-          
-            <a href="https://forms.gle/6Ye8CQoC6yUg2VuN9" target="_blank" rel="noreferrer">
-            <Button
-              primary='true'
-              onMouseEnter={onHover}
-              onMouseLeave={onHover}
-            >
-              Resume {hover ? <ArrowDown /> : <ResumeDoc />}
-            </Button>
-            </a>
+            <LinkResume href={resume} target='_blank' rel='noreferrer'>
+              <Button
+                primary='true'
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                Resume {hover ? <ArrowDown /> : <ResumeDoc />}
+              </Button>
+            </LinkResume>
           </HeroBtnWarpper>
         </Contact>
-
       </Intro>
       <ImgBg src={img} />
     </HeroContainer>

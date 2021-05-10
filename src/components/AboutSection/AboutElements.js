@@ -53,9 +53,10 @@ export const AboutMeContent = styled.div`
 
 export const AboutMeH1 = styled.h1`
   font-size: 3rem;
-  color: #0c0c0c;
+  font-weight: 500;
   text-align: start;
   line-height: 4rem;
+  color: #0c0c0c;
 
   @media screen and (max-width: 1024px) {
     font-size: 2.2rem;
@@ -66,7 +67,7 @@ export const AboutMeH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
@@ -74,9 +75,9 @@ export const AboutMeH2 = styled.h2``;
 
 export const AboutMeP = styled.p`
   font-size: 1.25rem;
-  color: #0c0c0c;
+  font-weight: 400;
   text-align: justify;
-
+  color: #0c0c0c;
   @media screen and (max-width: 1024px) {
     font-size: 1.25rem;
   }
@@ -86,6 +87,6 @@ export const AboutMeP = styled.p`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
   }
 `;
