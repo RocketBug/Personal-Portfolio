@@ -44,7 +44,7 @@ const Resume = () => {
             </div>
           </li>
 
-          <li>
+          {/* <li>
             <div className='direction-r'>
               <div className='flag-wrapper'>
                 <span className='flag'>Senior Secondary (12th Grade)</span>
@@ -72,7 +72,7 @@ const Resume = () => {
                 GPA 8.0
               </div>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
